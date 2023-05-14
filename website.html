@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Mother's Day!</title>
+	<style>
+		#container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 150vh;
+		}
+
+		#title {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		#image {
+			display: none;
+			margin-top: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<button onclick="showImage()">Click Here</button>
+        <h1 id="title">Happy Mother's Day Mommy! from Chandler</h1>
+		<img id="image" src="file:///C:/Users/chand/Downloads/Untitled%20design.png">
+	</div>
+
+	<script>
+		function showImage() {
+			document.getElementById("image").style.display = "block";
+			document.getElementById("title").style.display = "block";
+		}
+	</script>
+</body>
+</html>
